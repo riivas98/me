@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carrusel de Imágenes</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+  <link rel="stylesheet" href="/css/estilo.css">
+
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap');
+    h1 {
+      margin-top: 100px;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        color: #fc848a;
+    }
+    body {
+      color: #fc848a;
+    }
+    .carousel {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .carousel img {
+      width: 100%;
+      height: auto;
+    }
+    .slick-prev, .slick-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 30px;
+      color: #fff;
+      background-color: #fc848a;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 1;
+    }
+    .slick-prev {
+      left: 0;
+    }
+    .slick-next {
+      right: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+        <nav class="nav">
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+            <a href="#" class="logo">me.</a>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="/Bienvenida/home.html" class="nav-link ">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Intro/tipos.html" class="nav-link ">Tipos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Ejercicio/ejercicio.html" class="nav-link ">Ejercicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Meditacion/meditacion.html" class="nav-link ">Meditación</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Actividades/actividades.html" class="nav-link ">Actividades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/TCA/tca.html" class="nav-link ">TCA</a>
+
+                </li>
+                <li class="nav-item">
+                    <a href="/Personas/personas.html" class="nav-link active">Personas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Us/us.html" class="nav-link ">Us</a>
+                    <ul class="subnav">
+                        <li><a href="/Us/registro.html" style="color: #fc848a;">Registro</a></li>
+                        <li><a href="/Us/us.html" style="color: #fc848a;">Acerca de me</a></li>
+                        <li><a href="/Us/us.html" style="color: #fc848a;">Experiencia</a></li>
+                    </ul>
+                </li>
+                    
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <h1>Las personitas bonitas te hacen brillar</h1>
+  <div class="carousel">
+    <img src="/Imagenes/41.jpg" alt="Imagen 1">
+    <img src="/Imagenes/34.jpg" alt="Imagen 2">
+    <img src="/Imagenes/64.jpg" alt="Imagen 3">
+    <img src="/Imagenes/66.jpg" alt="Imagen 4">
+    <img src="/Imagenes/67.jpg" alt="Imagen 5">
+    <img src="/Imagenes/10.jpg" alt="Imagen 6">
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.carousel').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: '<div class="slick-prev">◀</div>',
+        nextArrow: '<div class="slick-next">▶</div>'
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/registro.css">
+    <title>Registro</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="#" class="logo">me.</a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="/Bienvenida/home.html" class="nav-link ">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Intro/tipos.html" class="nav-link ">Tipos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Ejercicio/ejercicio.html" class="nav-link ">Ejercicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Meditacion/meditacion.html" class="nav-link ">Meditación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Actividades/actividades.html" class="nav-link ">Actividades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/TCA/tca.html" class="nav-link ">TCA</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Us/us.html" class="nav-link ">Us</a>
+                        <ul class="subnav">
+                            <li><a href="/Us/registro.html" style="color: #fc848a;">Registro</a></li>
+                            <li><a href="/Us/us.html" style="color: #fc848a;">Acerca de me</a></li>
+                            <li><a href="/Us/us.html" style="color: #fc848a;">Experiencia</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero" id="hero">
+        <div class="container">
+            <h2 class="h2-sub">
+                <span class="fil"></span>
+            </h2>
+            <h1 class="head">Registro</h1>
+           
+        </div>
+    </section>
+
+
+<section class="registro">
+    <h1>Ingresa tus datos</h1>
+
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="text" id="apellido" placeholder="Apellido">
+    <button onclick="guardarRegistro()">Guardar</button>
+    <button onclick="borrarRegistro()">Borrar</button>
+    <button onclick="verRegistros()">Ver Registros</button>
+    <button onclick="actualizarRegistro()">Actualizar</button>
+</section>
+
+
+    <table id="tablaRegistros">
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+        </tr>
+    </table>
+
+    <script src="/Us/script1.js"></script>
+
+    <script>
+
+        const selectElement = function(element) {
+            return document.querySelector(element);
+        }
+
+
+        let menuToggle = selectElement('.menu-toggle');
+        let body = selectElement('body');
+
+        menuToggle.addEventListener('click', function(){
+            body.classList.toggle('open');
+        })
+
+    </script>
+</body>
+</html>
