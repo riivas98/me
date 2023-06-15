@@ -209,7 +209,17 @@ header {
    text-align: center;
    
 }
-
+.fis {
+    color: #fc848a;
+    letter-spacing: .7rem;
+    margin-right: -.7rem;
+   
+    font-size: 5rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: .5rem;
+}
 .circle {
     font-size: 1.5rem;
     color: #f12f46;
